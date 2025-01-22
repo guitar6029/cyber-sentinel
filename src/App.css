@@ -1,0 +1,44 @@
+body {
+  background: #000;
+  color: #fff;
+}
+
+@keyframes drop-fade-in {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes from-left-to-point {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.from-left-to-point {
+  animation: from-left-to-point 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.drop-fade-in {
+ animation: drop-fade-in 2s ease-in-out;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
